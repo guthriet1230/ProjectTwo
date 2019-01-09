@@ -29,20 +29,21 @@
 
   <div id="section-form-form">
     <div id="section-gutter"> </div>
-    <form method="get">
+    <form id="postForm" method="get">
       <label>Item name:</label><br />
-      <input placeholder="Lawnmower, Shovel, Milk, Sugar! etc.." type="text" name="itemname" id="itemname" value=""  />
+      <input placeholder="Lawnmower, Shovel, Milk, Sugar! etc.." type="text" name="itemname" id="itemname" required autofocus/>
       <br /><br />
 
       <label>Image URL:</label><br />
-      <input placeholder="https://MyImage.jpg" type="text" name="image-url" id="image-url" value=""  /> <br /><br />
+      <input placeholder="https://MyImage.jpg" type="text" name="image-url" id="image-url"
+      oninput="this.setCustomValidity('')" oninvalid=""/> <br /><br />
 
 
       <label for="msg">Message:</label><br>
 
-      <textarea placeholder="Special Instructions? Let your neighbor know!" id="msg" name="user_message" id="user_message"  ></textarea>
+      <textarea placeholder="Special Instructions? Let your neighbor know!" id="msg" name="user_message" id="user_message" maxlength="200" required ></textarea>
 
-      <button type="submit" id="submit"><a href="/get">Submit</a></button>
+      <button type="submit" id="submit">Submit</button>
     </form>
   </div>
 </section>
