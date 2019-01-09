@@ -47,4 +47,4 @@ const formSubmit = function(event) {
 }
 
 
-$('#postForm').submit(formSubmit());
+$('#postForm').submit(formSubmit);
