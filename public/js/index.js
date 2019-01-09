@@ -1,24 +1,6 @@
-
-console.log("Page loaded");
-
 const submitPost = $("#submit");
-<<<<<<< HEAD
-let validImg = false;
-
-
-=======
 const imageUrl = $("#image-url").val();
 const validImg = false;
-
-// if (imageUrl.endsWith(".jpg" || imageUrl.includes(".png"))) {
-//     validImg === true;
-//     submitPost.removeAttr("disabled");
-
-// } else {
-//     validImg === false;
-//     $("image-url").css("border-color","red")
-// };
->>>>>>> 91fad5f5b331563785389641e2499f1e02c924c1
 
 const formSubmit = function(event) {
     event.preventDefault();

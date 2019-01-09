@@ -179,11 +179,9 @@ button{
   padding-top:2%;
 }
 
-
 #companyLogo2 {
  float:left;
  width:100px;
- /* margin-left: */
 }
 /* #companyLogo3 {
   float:left;
@@ -191,7 +189,6 @@ button{
   margin-top:5%;
   /* margin-left: */
  
-
 #pageDetails {
   text-align: center;
   width:80%;
@@ -225,32 +222,37 @@ button{
   display:relative;
 }
 
-.card img{
+/* .image-container{
+  position: relative; */
+.image-container{
+  height: 55%;
+}
+
+.card img, .image-container{
   max-height:300px;
   max-width:90%;
   margin:5%;
   text-align:center;
+  display: flex;
+  align-items: center;
 }
+
 .itemInfo {
-  padding: 0 1rem;
+ padding: 0 1rem;
  height:45%;
  position:relative;
 }
 
 .card button{
   position:absolute;
+  margin:10% 11% auto 11%;
   text-align:center;
-  margin:auto 10%;
-  margin-top:10%;
   width:65%;
-  bottom:15px;
+  bottom:30px;
 }
 
 .card h4{
   font-weight:900;
-}
-.image-container{
-  height:55%;
 }
 
 p.description{
