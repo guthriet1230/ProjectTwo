@@ -1,49 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<header id="head-login">
+  <h2>Cup of Sugar</h2>
 
-<head>
- <title>Passport Authentication</title>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
- <link href="stylesheets/style.css" rel="stylesheet">
-</head>
+</header>
 
-<body>
- <nav class="navbar navbar-default">
-   <div class="container-fluid">
-     <div class="navbar-header">
-     </div>
-   </div>
- </nav>
- <div class="container">
-   <div class="row">
-     <div class="col-md-6 col-md-offset-3">
-       <h2>Sign Up Form</h2>
-       <form class="signup">
-         <div class="form-group">
-           <label for="exampleInputEmail1">Email address</label>
-           <input type="email" class="form-control" id="email-input" placeholder="Email">
-         </div>
-         <div class="form-group">
-           <label for="exampleInputPassword1">Password</label>
-           <input type="password" class="form-control" id="password-input" placeholder="Password">
-         </div>
-         <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-           <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-           <span class="sr-only">Error:</span> <span class="msg"></span>
-         </div>
-         <button type="submit" class="btn btn-default">Sign Up</button>
-       </form>
-       <br />
-       <p>Or log in <a href="/login">here</a></p>
-     </div>
-   </div>
- </div>
+<section class="sections">
+  <div id="section-top">
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script type="text/javascript" src="js/signup.js"></script>
+    <img id="companyLogo2" src="/images/cupofSugarFullLogo.png">
 
-</body>
+    <div id="section-about">
+      <h3>Welcome to Cup of Sugar!</h3>
+      <br>
+      <p>
+       Cup of Sugar helps you share household items with your neighbors. Need lawnmower? A snowblower? A cup of sugar?
+        Check with your neighbors! Get started by signing up or logging in below.
+      </p>
+    </div>
+  </div>
+  <hr />
 
-</html>
+  <h2 id="signHead">Sign Up</h2>
+  <form class="signup">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="email-input" placeholder="Email">
+    </div>
+    <div class="form-group" id="form-group-2">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="password-input" placeholder="Password">
+    </div>
+    <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span> <span class="msg"></span>
+    </div>
+    <button type="submit" class="btn btn-default">Sign Up</button>
+  </form>
+  <br />
+  <p id="login">Or log in <a id="login-a" href="/login">here</a></p>
+
+</section>

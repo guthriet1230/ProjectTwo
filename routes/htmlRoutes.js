@@ -11,10 +11,13 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      res.redirect("/members");
+      // res.redirect("/members");
+      res.render("index");
+    } else {
+      res.render("sign");
     }
     // res.sendFile(path.join(__dirname, "../public/signup.html"));
-    res.render("sign");
+
   });
 
   app.get("/login", function(req, res) {
@@ -61,12 +64,14 @@ module.exports = function(app) {
     });
   });
 
-  // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
-    res.render("404");
-  });
+
   app.get("/members", isAuthenticated, function(req, res) {
     // res.sendFile(path.join(__dirname, "../public/members.html"));
     res.render("index");
+  });
+
+  // Render 404 page for any unmatched routes
+  app.get("*", function(req, res) {
+    res.render("404");
   });
 };

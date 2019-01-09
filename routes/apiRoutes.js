@@ -20,24 +20,20 @@ module.exports = function(app) {
   });
 
   // Create a new example
-  app.post("/api/NewFavor", function(req, res) {
+  app.post("/api/newFavor", function(req, res) {
 
     let newFavor = req.body;
 
     // newFavor.UserId = 1;
-
+    newFavor.userEmail = req.user.email;
     //This should be updated to the User's actual ID
     if (!newFavor.userEmail) {
       newFavor.userEmail = "me@mine.com";
     }
 
     if (!newFavor.imageURL) {
-      console.log("add an image");
       newFavor.imageURL = "./images/cupofSugar.png";
     } 
-
-    console.log(newFavor.imageURL);
-
 
     db.Favor.create(newFavor).then(function(dbExample) {
       res.json(dbExample);
@@ -82,7 +78,6 @@ module.exports = function(app) {
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
   app.post("/api/signup", function(req, res) {
-    console.log(req.body);
     db.User.create({
       email: req.body.email,
       password: req.body.password

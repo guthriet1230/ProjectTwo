@@ -185,6 +185,12 @@ button{
  width:100px;
  /* margin-left: */
 }
+/* #companyLogo3 {
+  float:left;
+  width:100px;
+  margin-top:5%;
+  /* margin-left: */
+ 
 
 #pageDetails {
   text-align: center;
@@ -342,12 +348,91 @@ form button a{
   padding: 0 10%;
 }
 
+/*! --------------------------------*/
+/*! ------------------------------*/
+/*! SIGN IN AND LOGIN */
+/*! --------------------------------*/
+/*! --------------------------------*/
+
+#signHead{
+  margin-left:5%;
+  margin-right:5%;
+  margin-top:2%;
+}
+
+#login-a{
+  color:white;
+}
+.signup{
+  margin-bottom:0;
+}
+
+.login{
+  margin-bottom:0;
+}
+
+#login{
+  padding:0 5%;
+}
+
+#form-group-2{
+  margin-top:15px;
+}
+
+/*! --------------------------------*/
+/*! ------------------------------*/
+/*!  404 */
+/*! --------------------------------*/
+/*! --------------------------------*/
+
+#error-container{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-align:center;
+  flex-direction:column;
+}
+img#shrug{
+ justify-content: center;
+ text-align:center;
+ margin-top:10%;
+ flex-shrink:1;
+}
+
+#error-section{
+  min-height:400px;
+}
+
+a#back-to-home{
+  color:white;
+}
+#shrug-container{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-align:center;
+}
+
+
+/*! --------------------------------*/
+/*! ------------------------------*/
+/*! Media Queries */
+/*! --------------------------------*/
+/*! --------------------------------*/
+
+
+
+
 /* ----------------------
 Media Screen 980 
 ------------------------- */
 @media screen and (max-width: 1080px) {
   #section-about{
     padding-left:2%;
+  }
+
+  #signHead{
+    margin-top:5%;
   }
 }
 
@@ -418,6 +503,9 @@ header{
   display:flex;
   flex-direction: column;
 }
+#head-login{
+  height:75px;
+}
 
 
 header h2{
@@ -428,6 +516,10 @@ header h2{
 
 header h4{
   margin:0;
+}
+
+#section-about{
+  flex-direction:column;
 }
 
 #authentication{
