@@ -1,6 +1,6 @@
 const submitPost = $("#submit");
 const imageUrl = $("#image-url").val();
-const validImg = false;
+let validImg = false;
 
 const formSubmit = function(event) {
     event.preventDefault();
