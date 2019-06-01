@@ -1,7 +1,8 @@
 # CrispyCoders
-## Cup of Sugar
 
 Live Link: https://crispycodersprojecttwo.herokuapp.com/
+
+## Cup of Sugar
 
 This is our Cup of Sugar app. It's an app that helps you share items you might not use every day. Got an snowblower you use only during heavy snow? A lawnmower thats gaining cobbwebs? Share it with your neighbors!
 
